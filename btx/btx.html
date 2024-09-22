@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estética Especializada</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Background image styling */
+        .background {
+            background-image: url('btx.jpg'); /* Substitua pela URL da sua imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* Modal styling */
+        .modal-content {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 90%;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #d63384; /* Cor que inspira confiança e conversão */
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* Button styling */
+        .cta-button {
+            background-color: #ff69b4; /* Rosa chamativo e feminino */
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #ff85c1; /* Cor um pouco mais clara no hover */
+        }
+
+        /* Card styling */
+        .card {
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .card-description {
+            flex: 1;
+            color: #666; /* Fonte cinza para a descrição */
+            font-size: 1.1em;
+        }
+
+        .card-description h3 {
+            font-size: 1.5em;
+            color: #d63384;
+            margin-bottom: 10px;
+        }
+
+        /* Footer styling for Google Map */
+        footer {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        footer iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .cta-button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+
+            .card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .card img {
+                margin-bottom: 15px;
+                margin-right: 0;
+            }
+
+            footer iframe {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="modal-content">
+            <h1>Estética Especializada</h1>
+            <h2>Você merece o que há de melhor, agende agora sua visita.</h2>
+            <p>BOTOX R$600,00. Não deixe as marcas do tempo destruir sua aparência.</p>
+            <a href="https://wa.me/5562993330767" class="cta-button">QUERO SABER MAIS</a>
+        </div>
+    </div>
+
+    <!-- Card with photo and description -->
+    <div class="card">
+        <img src="taissa.jpg" alt="Doutora Taissa">
+        <div class="card-description">
+            <h3>Dra. Taissa Oliveira</h3>
+            <p>Doutora Taissa possui especialização em estética avançada, com mais de 10 anos de experiência em procedimentos estéticos não invasivos. Reconhecida por sua habilidade em harmonização facial e tratamentos anti-idade, sua abordagem cuidadosa e detalhista garante resultados naturais e satisfatórios para seus pacientes. Agende uma consulta e descubra como manter uma aparência jovem e saudável.</p>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Nosso Local</h3>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3802.292281642639!2d-49.26820798469916!3d-16.683365188482336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef18b54044c0f%3A0xb76c75b729b0dcd2!2sR.%20Dona%20Mariquinha%2C%20288%20-%20Sala%204%20-%20Setor%20Negr%C3%A3o%20de%20Lima%2C%20Goi%C3%A2nia%20-%20GO%2C%2074650-130!5e0!3m2!1spt-BR!2sbr!4v1694778040439!5m2!1spt-BR!2sbr" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </footer>
+</body>
+</html>
